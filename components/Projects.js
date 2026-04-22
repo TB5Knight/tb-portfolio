@@ -1,11 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView,Image,Linking} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Button } from '@rneui/themed';
 import project1 from './img/excercise-app.png';
 import project2 from './img/reminderpilot.png';
 import project3 from './img/stayfitproject.png';
 
 const Projects = ({ innerRef }) => {
+  const navigation = useNavigation();
   return (
     <ScrollView ref={innerRef} style={styles.container}>
       <Text style={styles.title}>Projects</Text>
@@ -13,8 +15,8 @@ const Projects = ({ innerRef }) => {
       {/* Exercise App */}
         <View style={styles.project}>
             <Image source={project1} style={styles.image} />
-            <Text style={styles.projectTitle}>excerciseApp</Text>
-            <Text style={styles.projectDesc}>A excercise app designed to help users track their workouts and stay motivated. This was designed with React.</Text>
+            <Text style={styles.projectTitle}>Exercise App</Text>
+            <Text style={styles.projectDesc}>A exercise app designed to help users track their workouts and stay motivated. This was designed with React.</Text>
             <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/fit-app/')} />
         </View>
 
@@ -36,14 +38,32 @@ const Projects = ({ innerRef }) => {
     </ScrollView>
     );
     };
-
 const styles = StyleSheet.create({
-  container: { padding: 30 },
-  title: { fontSize: 22, fontWeight: 'bold', marginBottom: 20 },
-  project: { marginBottom: 30, alignItems: 'center' },
-  image: { width: 300, height: 200, marginBottom: 10 },
-  projectTitle: { fontSize: 18, fontWeight: 'bold' },
-  projectDesc: { textAlign: 'center', marginBottom: 10 }
+  container: { 
+    padding: 30,
+    backgroundColor: '#8ecae6'
+  },
+  title: { 
+    fontSize: 22, 
+    fontWeight: 'bold', 
+    marginBottom: 20 
+  },
+  project: { 
+    marginBottom: 30, 
+    alignItems: 'center' 
+  },
+  image: { 
+    width: 300, 
+    height: 200, 
+    marginBottom: 10 
+  },
+  projectTitle: { 
+    fontSize: 18, 
+    fontWeight: 'bold' 
+  },
+  projectDesc: { 
+    textAlign: 'center', 
+    marginBottom: 10 
+  }
 });
-
 export default Projects;
