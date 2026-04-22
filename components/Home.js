@@ -39,20 +39,15 @@ const Home = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-  background: {
-    flex: 1,
-    width: '100%',
-    height: '100%'
-  },
+background: {
+  flex: 1,
+  width: '100%',
+  height: '100%'
+},
   overlay: {
-    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
     padding: 20,
-    backgroundColor: 'rgba(0,0,0,0.3)'
+    backgroundColor: '#0000' 
   },
   title: {
     fontSize: 32,
