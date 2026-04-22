@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const Footer = () => {
   return (
     <View style={styles.footer}>
-      <Text>TBKnight5 Portfolio</Text>
+      <Text>TBurdgess Portfolio</Text>
     </View>
   );
 };
