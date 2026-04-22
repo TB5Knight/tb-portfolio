@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import profile from './img/AI-image.JPG';
+import profile from './img/profile.jpg';
 
 const About = () => {
   return (
