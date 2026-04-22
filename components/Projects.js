@@ -53,7 +53,7 @@ const Projects = ({ innerRef }) => {
 const styles = StyleSheet.create({
   container: { 
     padding: 30,
-    backgroundColor: '#8ecae6'
+    backgroundColor: '#2a9d8f'
   },
   title: { 
     fontSize: 22, 
