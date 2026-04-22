@@ -11,6 +11,7 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   footer: {
+    backgroundColor: '#274c77',
     padding: 20,
     alignItems: 'center'
   }
