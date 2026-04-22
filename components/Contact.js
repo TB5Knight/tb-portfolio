@@ -21,68 +21,64 @@ const Contact = () => {
     setMessage('');
   };
 
-  return (
-    <Layout>
-      <ScrollView contentContainerStyle={styles.container}>
+   return (
+    <ScrollView contentContainerStyle={styles.container}>
 
-        <Text style={styles.title}>Contact Me</Text>
+      <Text style={styles.title}>Contact Me</Text>
 
-        {/* FORM */}
-        <TextInput
-          style={styles.input}
-          placeholder="Name"
-          value={name}
-          onChangeText={setName}
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="Name"
+        value={name}
+        onChangeText={setName}
+      />
 
-        <TextInput
-          style={styles.input}
-          placeholder="Email"
-          value={email}
-          onChangeText={setEmail}
-          keyboardType="email-address"
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+      />
 
-        <TextInput
-          style={[styles.input, styles.textArea]}
-          placeholder="Message"
-          value={message}
-          onChangeText={setMessage}
-          multiline
-        />
+      <TextInput
+        style={[styles.input, styles.textArea]}
+        placeholder="Message"
+        value={message}
+        onChangeText={setMessage}
+        multiline
+      />
 
-        <Button
-          title="Send Message"
-          onPress={handleSubmit}
-          buttonStyle={styles.button}
-        />
+      <Button
+        title="Send Message"
+        onPress={handleSubmit}
+        buttonStyle={styles.button}
+      />
 
-        {/* SOCIAL LINKS */}
-        <Text style={styles.sectionTitle}>Connect With Me</Text>
+      <Text style={styles.sectionTitle}>Connect With Me</Text>
 
-        <Button
-          title="GitHub"
-          type="outline"
-          onPress={() => Linking.openURL('https://github.com/TB5Knight')}
-          containerStyle={styles.socialButton}
-        />
+      <Button
+        title="GitHub"
+        type="outline"
+        onPress={() => Linking.openURL('https://github.com/TB5Knight')}
+        containerStyle={styles.socialButton}
+      />
 
-        <Button
-          title="LinkedIn"
-          type="outline"
-          onPress={() => Linking.openURL('https://www.linkedin.com/in/tripp-burdgess7')}
-          containerStyle={styles.socialButton}
-        />
+      <Button
+        title="LinkedIn"
+        type="outline"
+        onPress={() => Linking.openURL('https://www.linkedin.com/in/tripp-burdgess7')}
+        containerStyle={styles.socialButton}
+      />
 
-        {/* CONTACT INFO */}
-        <View style={styles.infoBox}>
-          <Text style={styles.infoText}>ta116473@ucf.edu</Text>
-        </View>
+      <View style={styles.infoBox}>
+        <Text style={styles.infoText}>ta116473@ucf.edu</Text>
+      </View>
 
-      </ScrollView>
-    </Layout>
+    </ScrollView>
   );
 };
+
 
 const styles = StyleSheet.create({
   container: {
