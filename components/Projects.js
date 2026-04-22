@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView,Image,Linking} from 'react-native';
 import { Button } from '@rneui/themed';
-import project1 from './components/img/excercise-app.png';
-import project2 from './components/img/reminderpilot.png';
-import project3 from './components/img/stayfitproject.png';
+import project1 from './img/excercise-app.png';
+import project2 from './img/reminderpilot.png';
+import project3 from './img/stayfitproject.png';
 
 const Projects = ({ innerRef }) => {
   return (
