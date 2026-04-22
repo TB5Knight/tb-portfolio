@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const Footer = () => {
   return (
     <View style={styles.footer}>
-      <Text>TBurdgess Portfolio</Text>
+      <Text style={styles.footerText}>TBurdgess Portfolio</Text>
     </View>
   );
 };
@@ -12,9 +12,12 @@ const Footer = () => {
 const styles = StyleSheet.create({
   footer: {
     backgroundColor: '#274c77',
-    color: '#fff',
     padding: 20,
     alignItems: 'center'
+  },
+  footerText: {
+    color: '#fff',
+    fontSize: 16
   }
 });
 
