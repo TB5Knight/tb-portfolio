@@ -63,13 +63,16 @@ const styles = StyleSheet.create({
     height: 200, 
     marginBottom: 10 
   },
-buttonContainer: {
+button: {
   backgroundColor: '#ffb703',
   color: '#023047',
+},
+buttonContainer: {
   borderRadius: 8,
   paddingVertical: 10,
   paddingHorizontal: 15
 },
+
  projectTitle: { 
     fontSize: 18, 
     fontWeight: 'bold' 
