@@ -1,9 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import { Button } from '@rneui/themed';
+import { useNavigation } from '@react-navigation/native';
 import background from './img/background.png';
 
-const Home = ({ navigation }) => {
+const Home = () => {
+  const navigation = useNavigation();
+  
   return (
  
     <ImageBackground source={background} style={styles.background} resizeMode="cover">
@@ -26,6 +29,7 @@ const Home = ({ navigation }) => {
       </View>
 
     </ImageBackground>
+
   );
 };
 
