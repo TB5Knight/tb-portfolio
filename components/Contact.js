@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, TextInput, Linking, ScrollView } from 'react-native';
 import { Button } from '@rneui/themed';
 
