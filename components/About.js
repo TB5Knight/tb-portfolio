@@ -56,15 +56,18 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   text: {
+    color: '#ffff',
     textAlign: 'center',
     marginBottom: 20
   },
   sectionTitle: {
+    color: '#ffff',
     fontSize: 20,
     fontWeight: 'bold',
     marginTop: 15
   },
   list: {
+    color: '#ffff',
     fontSize: 16,
     marginTop: 5
   }
