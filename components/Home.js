@@ -5,6 +5,7 @@ import background from './img/background.png';
 
 const Home = ({ navigation }) => {
   return (
+ 
     <ImageBackground source={background} style={styles.background} resizeMode="cover">
       
       <View style={styles.overlay}>
@@ -29,10 +30,11 @@ const Home = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    justifyContent: 'center'
-  },
+background: {
+  flex: 1,
+  width: '100%',
+  height: '100%'
+},
   overlay: {
     alignItems: 'center',
     padding: 20,
