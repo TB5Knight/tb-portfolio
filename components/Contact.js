@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Linking, ScrollView } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 import { Button } from '@rneui/themed';
 
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 const Contact = () => {
-  const navigation = useNavigation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -21,68 +22,84 @@ const Contact = () => {
     setMessage('');
   };
 
-   return (
-    <ScrollView contentContainerStyle={styles.container}>
+  return (
+    <View style={styles.container}>
 
-      <Text style={styles.title}>Contact Me</Text>
+      {/* NAVBAR */}
+      <Navbar />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Name"
-        value={name}
-        onChangeText={setName}
-      />
+      {/* CONTENT */}
+      <ScrollView contentContainerStyle={styles.scrollContent}>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-      />
+        <Text style={styles.title}>Contact Me</Text>
 
-      <TextInput
-        style={[styles.input, styles.textArea]}
-        placeholder="Message"
-        value={message}
-        onChangeText={setMessage}
-        multiline
-      />
+        <TextInput
+          style={styles.input}
+          placeholder="Name"
+          value={name}
+          onChangeText={setName}
+        />
 
-      <Button
-        title="Send Message"
-        onPress={handleSubmit}
-        buttonStyle={styles.button}
-      />
+        <TextInput
+          style={styles.input}
+          placeholder="Email"
+          value={email}
+          onChangeText={setEmail}
+          keyboardType="email-address"
+        />
 
-      <Text style={styles.sectionTitle}>Connect With Me</Text>
+        <TextInput
+          style={[styles.input, styles.textArea]}
+          placeholder="Message"
+          value={message}
+          onChangeText={setMessage}
+          multiline
+        />
 
-      <Button
-        title="GitHub"
-        type="outline"
-        onPress={() => Linking.openURL('https://github.com/TB5Knight')}
-        containerStyle={styles.socialButton}
-      />
+        <Button
+          title="Send Message"
+          onPress={handleSubmit}
+          buttonStyle={styles.button}
+        />
 
-      <Button
-        title="LinkedIn"
-        type="outline"
-        onPress={() => Linking.openURL('https://www.linkedin.com/in/tripp-burdgess7')}
-        containerStyle={styles.socialButton}
-      />
+        <Text style={styles.sectionTitle}>Connect With Me</Text>
 
-      <View style={styles.infoBox}>
-        <Text style={styles.infoText}>ta116473@ucf.edu</Text>
-      </View>
+        <Button
+          title="GitHub"
+          type="outline"
+          onPress={() => Linking.openURL('https://github.com/TB5Knight')}
+          containerStyle={styles.socialButton}
+        />
 
-    </ScrollView>
+        <Button
+          title="LinkedIn"
+          type="outline"
+          onPress={() => Linking.openURL('https://www.linkedin.com/in/tripp-burdgess7')}
+          containerStyle={styles.socialButton}
+        />
+
+        <View style={styles.infoBox}>
+          <Text style={styles.infoText}>ta116473@ucf.edu</Text>
+        </View>
+
+      </ScrollView>
+
+      {/* FOOTER */}
+      <Footer />
+
+    </View>
   );
 };
 
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20
+    flex: 1,
+    backgroundColor: '#fff'
+  },
+  scrollContent: {
+    padding: 20,
+    alignItems: 'center'
   },
   title: {
     fontSize: 24,
@@ -91,6 +108,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   input: {
+    width: '100%',
     borderWidth: 1,
     borderColor: '#ccc',
     padding: 10,
@@ -114,7 +132,8 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   socialButton: {
-    marginVertical: 5
+    marginVertical: 5,
+    width: '80%'
   },
   infoBox: {
     marginTop: 20,
