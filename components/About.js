@@ -50,7 +50,7 @@ const About = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#6096ba'
+    backgroundColor: '#778DA9'
   },
   content: {
     flex: 1,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   title: {
-    color: '#fff',
+    color: '#E0E1DD',
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 15
@@ -70,18 +70,18 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   text: {
-    color: '#fff',
+    color: '#E0E1DD',
     textAlign: 'center',
     marginBottom: 20
   },
   sectionTitle: {
-    color: '#fff',
+    color: '#E0E1DD',
     fontSize: 20,
     fontWeight: 'bold',
     marginTop: 15
   },
   list: {
-    color: '#fff',
+    color: '#E0E1DD',
     fontSize: 16,
     marginTop: 5
   }

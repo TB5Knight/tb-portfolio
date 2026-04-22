@@ -57,12 +57,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#E0E1DD',
     marginBottom: 10
   },
   subtitle: {
     fontSize: 18,
-    color: '#fff',
+    color: '#E0E1DD',
     marginBottom: 5
   }
 });

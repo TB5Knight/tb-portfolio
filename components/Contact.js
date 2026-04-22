@@ -95,13 +95,14 @@ const Contact = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#778DA9'
   },
   scrollContent: {
     padding: 20,
     alignItems: 'center'
   },
   title: {
+    color: '#E0E1DD',
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
@@ -136,10 +137,15 @@ const styles = StyleSheet.create({
     width: '80%'
   },
   infoBox: {
+    color: '#E0E1DD',
+    backgroundColor: '#14213d',
+    padding: 15,
+    borderRadius: 8,
     marginTop: 20,
     alignItems: 'center'
   },
   infoText: {
+    color: '#E0E1DD',
     fontSize: 16,
     marginTop: 5
   }

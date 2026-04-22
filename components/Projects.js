@@ -84,14 +84,14 @@ const Projects = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#15616d'
+    backgroundColor: '#778DA9'
   },
   scrollContent: {
     padding: 30,
     alignItems: 'center'
   },
   title: {
-    color: '#fff',
+    color: '#E0E1DD',
     fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 20
@@ -107,12 +107,12 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   projectTitle: {
-    color: '#fff',
+    color: '#E0E1DD',
     fontSize: 18,
     fontWeight: 'bold'
   },
   projectDesc: {
-    color: '#fff',
+    color: '#E0E1DD',
     textAlign: 'center',
     marginBottom: 10
   },
