@@ -17,7 +17,9 @@ const Projects = ({ innerRef }) => {
             <Image source={project1} style={styles.image} />
             <Text style={styles.projectTitle}>Exercise App</Text>
             <Text style={styles.projectDesc}>A exercise app designed to help users track their workouts and stay motivated. This was designed with React.</Text>
-            <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/fit-app/')} />
+            <View style={styles.buttonContainer}>
+                <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/fit-app/')} />
+            </View>
         </View>
 
       {/* Reminder Pilot */}
@@ -25,7 +27,9 @@ const Projects = ({ innerRef }) => {
             <Image source={project2} style={styles.image} />
             <Text style={styles.projectTitle}>Reminder Pilot</Text>
             <Text style={styles.projectDesc}>A reminder app designed to help users stay organized and on top of their tasks. This was designed with React native.</Text>
-            <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/reminder-pilot/')} />
+            <View style={styles.buttonContainer}>
+                <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/reminder-pilot/')} />
+            </View>
         </View>
 
         {/* Stay Fit Project */}
@@ -33,7 +37,9 @@ const Projects = ({ innerRef }) => {
             <Image source={project3} style={styles.image} />
             <Text style={styles.projectTitle}>Stay Fit Project</Text>
             <Text style={styles.projectDesc}>A fitness app designed to help users achieve their health and wellness goals. This was designed with React native</Text>
-            <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/stay-fit/')} />
+            <View style={styles.buttonContainer}>
+                <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/stay-fit/')} />
+            </View>
         </View>
     </ScrollView>
     );
@@ -57,14 +63,17 @@ const styles = StyleSheet.create({
     height: 200, 
     marginBottom: 10 
   },
-  button:{
-    backgroundColor: '#ffb703',
-    color: '#023047',
-    borderRadius: 5,
-    padding: 10,
-    marginTop: 10
-  },
-  projectTitle: { 
+button: {
+  backgroundColor: '#ffb703',
+  borderRadius: 8,
+  paddingVertical: 10,
+  paddingHorizontal: 15
+},
+buttonContainer: {
+  marginTop: 10,
+  width: '80%'
+},
+ projectTitle: { 
     fontSize: 18, 
     fontWeight: 'bold' 
   },
