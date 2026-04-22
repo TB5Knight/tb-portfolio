@@ -135,8 +135,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   socialButton: {
-    backgroundColor: '#274c77',
-    Color: '#E0E1DD',
+    backgroundColor: '#E0E1DD',
     marginVertical: 5,
     width: '80%'
   },
