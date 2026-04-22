@@ -28,23 +28,6 @@ const Home = () => {
           <Text style={styles.subtitle}>Taylor Burdgess</Text>
           <Text style={styles.subtitle}>Designer</Text>
 
-          <Button
-            title="View My Projects"
-            onPress={() => navigation.navigate('Projects')}
-          />
-
-          <Button
-            title="Learn More About Me"
-            onPress={() => navigation.navigate('About')}
-            containerStyle={{ marginTop: 10 }}
-          />
-
-          <Button
-            title="Contact Me"
-            onPress={() => navigation.navigate('Contact')}
-            containerStyle={{ marginTop: 10 }}
-          />
-
         </View>
       </ImageBackground>
 
