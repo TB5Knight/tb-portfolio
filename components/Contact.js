@@ -127,6 +127,7 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   sectionTitle: {
+    color: '#E0E1DD',
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: 25,
@@ -134,6 +135,8 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   socialButton: {
+    backgroundColor: '#274c77',
+    Color: '#E0E1DD',
     marginVertical: 5,
     width: '80%'
   },
