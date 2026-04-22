@@ -17,9 +17,11 @@ const Projects = ({ innerRef }) => {
             <Image source={project1} style={styles.image} />
             <Text style={styles.projectTitle}>Exercise App</Text>
             <Text style={styles.projectDesc}>A exercise app designed to help users track their workouts and stay motivated. This was designed with React.</Text>
-            <View style={styles.buttonContainer}>
-                <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/fit-app/')} />
-            </View>
+           <View style={styles.buttonContainer}>
+           <Button
+            title="View the Link"onPress={() => Linking.openURL('https://tb5knight.github.io/fit-app/')  }
+           buttonStyle={styles.button} />
+           </View>
         </View>
 
       {/* Reminder Pilot */}
@@ -27,9 +29,11 @@ const Projects = ({ innerRef }) => {
             <Image source={project2} style={styles.image} />
             <Text style={styles.projectTitle}>Reminder Pilot</Text>
             <Text style={styles.projectDesc}>A reminder app designed to help users stay organized and on top of their tasks. This was designed with React native.</Text>
-            <View style={styles.buttonContainer}>
-                <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/reminder-pilot/')} />
-            </View>
+           <View style={styles.buttonContainer}>
+           <Button
+            title="View the Link"onPress={() => Linking.openURL('https://tb5knight.github.io/reminder-pilot/')  }
+           buttonStyle={styles.button} />
+           </View>
         </View>
 
         {/* Stay Fit Project */}
@@ -37,9 +41,11 @@ const Projects = ({ innerRef }) => {
             <Image source={project3} style={styles.image} />
             <Text style={styles.projectTitle}>Stay Fit Project</Text>
             <Text style={styles.projectDesc}>A fitness app designed to help users achieve their health and wellness goals. This was designed with React native</Text>
-            <View style={styles.buttonContainer}>
-                <Button title="View the Link" onPress={() => Linking.openURL('https://tb5knight.github.io/stay-fit/')} />
-            </View>
+           <View style={styles.buttonContainer}>
+           <Button
+            title="View the Link"onPress={() => Linking.openURL('https://tb5knight.github.io/stay-fit/')  }
+           buttonStyle={styles.button} />
+           </View>
         </View>
     </ScrollView>
     );
