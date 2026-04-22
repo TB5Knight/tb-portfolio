@@ -1,8 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, Linking, ScrollView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Button } from '@rneui/themed';
 
 const Contact = () => {
+  const navigation = useNavigation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
