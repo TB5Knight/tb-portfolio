@@ -2,53 +2,74 @@ import React from 'react';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import { Button } from '@rneui/themed';
 import { useNavigation } from '@react-navigation/native';
+
+import Navbar from './Navbar';
+import Footer from './Footer';
 import background from './img/background.png';
 
 const Home = () => {
   const navigation = useNavigation();
 
   return (
- 
-    <ImageBackground source={background} style={styles.background} resizeMode="cover">
-      
-      <View style={styles.overlay}>
-        <Text style={styles.title}>Welcome</Text>
-        <Text style={styles.subtitle}>Taylor Burdgess</Text>
-        <Text style={styles.subtitle}>Designer</Text>
+    <View style={styles.container}>
 
-        <Button
-          title="View My Projects"
-          onPress={() => navigation.navigate('Projects')}
-        />
+      {/* NAVBAR */}
+      <Navbar />
 
-        <Button
-          title="Learn More About Me"
-          onPress={() => navigation.navigate('About')}
-          containerStyle={{ marginTop: 10 }}
-        />
+      {/* MAIN CONTENT */}
+      <ImageBackground
+        source={background}
+        style={styles.background}
+        resizeMode="cover"
+      >
+        <View style={styles.overlay}>
 
-        <Button
-          title="Contact Me"
-          onPress={() => navigation.navigate('Contact')}
-          containerStyle={{ marginTop: 10 }}
-        />
-      </View>
+          <Text style={styles.title}>Welcome</Text>
+          <Text style={styles.subtitle}>Taylor Burdgess</Text>
+          <Text style={styles.subtitle}>Designer</Text>
 
-    </ImageBackground>
+          <Button
+            title="View My Projects"
+            onPress={() => navigation.navigate('Projects')}
+          />
 
+          <Button
+            title="Learn More About Me"
+            onPress={() => navigation.navigate('About')}
+            containerStyle={{ marginTop: 10 }}
+          />
+
+          <Button
+            title="Contact Me"
+            onPress={() => navigation.navigate('Contact')}
+            containerStyle={{ marginTop: 10 }}
+          />
+
+        </View>
+      </ImageBackground>
+
+      {/* FOOTER */}
+      <Footer />
+
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-background: {
-  flex: 1,
-  width: '100%',
-  height: '100%'
-},
+  container: {
+    flex: 1
+  },
+  background: {
+    flex: 1,
+    width: '100%',
+    height: '100%'
+  },
   overlay: {
+    flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#0000' 
+    backgroundColor: 'rgba(0,0,0,0.3)'
   },
   title: {
     fontSize: 32,
