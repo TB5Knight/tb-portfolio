@@ -53,9 +53,10 @@ const Projects = ({ innerRef }) => {
 const styles = StyleSheet.create({
   container: { 
     padding: 30,
-    backgroundColor: '#2a9d8f'
+    backgroundColor: '#15616d'
   },
   title: { 
+    color: '#ffff',
     fontSize: 22, 
     fontWeight: 'bold', 
     marginBottom: 20 
@@ -80,10 +81,12 @@ buttonContainer: {
 },
 
  projectTitle: { 
+    color: '#ffff',
     fontSize: 18, 
     fontWeight: 'bold' 
   },
   projectDesc: { 
+    color: '#ffff',
     textAlign: 'center', 
     marginBottom: 10 
   }
