@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <View style={styles.nav}>
-      <Button title="Home" onPress={() => navigation.navigate('Home')} />
-      <Button title="About" onPress={() => navigation.navigate('About')} />
-      <Button title="Projects" onPress={() => navigation.navigate('Projects')} />
-      <Button title="Contact" onPress={() => navigation.navigate('Contact')} />
+      <Button title="Home" onPress={() => navigation.navigate('Home')} buttonStyle={styles.button} />
+      <Button title="About" onPress={() => navigation.navigate('About')} buttonStyle={styles.button} />
+      <Button title="Projects" onPress={() => navigation.navigate('Projects')} buttonStyle={styles.button} />
+      <Button title="Contact" onPress={() => navigation.navigate('Contact')} buttonStyle={styles.button} />
     </View>
   );
 };
@@ -22,6 +22,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     padding: 10,
     backgroundColor: '#274c77'
+  },
+button: {
+    backgroundColor: '#274c77',
+    borderColor: '#fff',
+    borderWidth: 1,
+    paddingHorizontal: 15,
+    paddingVertical: 5
   }
 });
 
