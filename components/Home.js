@@ -6,7 +6,7 @@ import background from './img/background.png';
 
 const Home = () => {
   const navigation = useNavigation();
-  
+
   return (
  
     <ImageBackground source={background} style={styles.background} resizeMode="cover">
@@ -24,6 +24,12 @@ const Home = () => {
         <Button
           title="Learn More About Me"
           onPress={() => navigation.navigate('About')}
+          containerStyle={{ marginTop: 10 }}
+        />
+
+        <Button
+          title="Contact Me"
+          onPress={() => navigation.navigate('Contact')}
           containerStyle={{ marginTop: 10 }}
         />
       </View>
