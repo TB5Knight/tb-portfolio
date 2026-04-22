@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Linking, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Button } from '@rneui/themed';
