@@ -9,7 +9,7 @@ const About = () => {
       {/* Title */}
       <Text style={styles.title}>About Me</Text>
 
-      {/* Profile Image */}
+      {/* Image */}
       <Image source={profile} style={styles.image} />
 
       {/* Bio */}
@@ -20,14 +20,14 @@ const About = () => {
         skills, and passion for becoming a designer.
       </Text>
 
-      {/* Skills Section */}
+      {/* Skills */}
       <Text style={styles.sectionTitle}>Skills</Text>
       <Text style={styles.list}>- Creative Thinking</Text>
       <Text style={styles.list}>- Adobe Photoshop</Text>
       <Text style={styles.list}>- Figma</Text>
       <Text style={styles.list}>- HTML, CSS, and Javascript</Text>
 
-      {/* Interests Section */}
+      {/* Interests */}
       <Text style={styles.sectionTitle}>Interests</Text>
       <Text style={styles.list}>• Graphic Design</Text>
       <Text style={styles.list}>• Digital Art</Text>
