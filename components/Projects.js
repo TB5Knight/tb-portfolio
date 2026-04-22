@@ -63,15 +63,12 @@ const styles = StyleSheet.create({
     height: 200, 
     marginBottom: 10 
   },
-button: {
+buttonContainer: {
   backgroundColor: '#ffb703',
+  color: '#023047',
   borderRadius: 8,
   paddingVertical: 10,
   paddingHorizontal: 15
-},
-buttonContainer: {
-  marginTop: 10,
-  width: '80%'
 },
  projectTitle: { 
     fontSize: 18, 
