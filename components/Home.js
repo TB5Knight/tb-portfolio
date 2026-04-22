@@ -54,17 +54,23 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: 'rgba(0,0,0,0.3)'
   },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#E0E1DD',
-    marginBottom: 10
-  },
-  subtitle: {
-    fontSize: 18,
-    color: '#E0E1DD',
-    marginBottom: 5
-  }
+title: {
+  fontSize: 32,
+  fontWeight: 'bold',
+  color: '#E0E1DD',
+  marginBottom: 10,
+  textShadowColor: 'rgba(0,0,0,0.75)',
+  textShadowOffset: { width: 0, height: 2 },
+  textShadowRadius: 4,
+},
+subtitle: {
+  fontSize: 18,
+  color: '#E0E1DD',
+  marginBottom: 5,
+  textShadowColor: 'rgba(0,0,0,0.75)',
+  textShadowOffset: { width: 0, height: 1 },
+  textShadowRadius: 3,
+},
 });
 
 export default Home;
