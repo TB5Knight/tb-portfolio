@@ -48,12 +48,12 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   overlay: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-    backgroundColor: 'rgba(0,0,0,0.3)'
-  },
+  flex: 1,
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: 20,
+  backgroundColor: 'rgba(0,0,0,0.6)' 
+},
 title: {
   fontSize: 32,
   fontWeight: 'bold',
