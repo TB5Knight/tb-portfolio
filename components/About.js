@@ -40,6 +40,7 @@ const About = () => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#6096ba',
     padding: 30,
     alignItems: 'center'
   },
