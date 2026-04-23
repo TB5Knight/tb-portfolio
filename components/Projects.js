@@ -5,7 +5,7 @@ import { Button } from '@rneui/themed';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import project1 from './img/excercise-app.png';
+import project1 from './img/quiz-app.png';
 import project2 from './img/reminderpilot.png';
 import project3 from './img/stayfitproject.png';
 
@@ -24,15 +24,15 @@ const Projects = () => {
         {/* Exercise App */}
         <View style={styles.project}>
           <Image source={project1} style={styles.image} />
-          <Text style={styles.projectTitle}>Exercise App</Text>
+          <Text style={styles.projectTitle}>Quiz App</Text>
           <Text style={styles.projectDesc}>
-            A exercise app designed to help users track their workouts and stay motivated.
+            A quiz app designed to help users test their knowledge and learn new things.
           </Text>
 
           <View style={styles.buttonContainer}>
             <Button
               title="View the Link"
-              onPress={() => Linking.openURL('https://tb5knight.github.io/fit-app/')}
+              onPress={() => Linking.openURL('https://tb5knight.github.io/quiz-app/')}
               buttonStyle={styles.button}
             />
           </View>
