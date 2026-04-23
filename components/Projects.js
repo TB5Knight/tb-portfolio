@@ -116,13 +116,15 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 10
   },
-  button: {
-    backgroundColor: '#14213d',
-    borderRadius: 8
-  },
-  buttonContainer: {
-    marginTop: 10,
-    width: '80%'
-  }
+button: {
+  backgroundColor: '#14213d',
+  borderRadius: 8,
+  width: 200, 
+  alignSelf: 'center'
+},
+buttonContainer: {
+  marginTop: 10,
+  alignItems: 'center'
+}
 });
 export default Projects;
