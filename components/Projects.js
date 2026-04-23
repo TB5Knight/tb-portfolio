@@ -26,7 +26,7 @@ const Projects = () => {
           <Image source={project1} style={styles.image} />
           <Text style={styles.projectTitle}>Quiz App</Text>
           <Text style={styles.projectDesc}>
-            A quiz app designed to help users test their knowledge and learn new things.
+            A short 5-question quiz app designed to help users test their knowledge and learn new things. This project was created by React Native and JavaScript.
           </Text>
 
           <View style={styles.buttonContainer}>
@@ -43,7 +43,7 @@ const Projects = () => {
           <Image source={project2} style={styles.image} />
           <Text style={styles.projectTitle}>Reminder Pilot</Text>
           <Text style={styles.projectDesc}>
-            A reminder app designed to help users stay organized and on top of their tasks.
+            A reminder app designed to help users stay organized and on top of their tasks. This React Native design was my favorite project to work on because of the clean and simple design.
           </Text>
 
           <View style={styles.buttonContainer}>
@@ -60,7 +60,7 @@ const Projects = () => {
           <Image source={project3} style={styles.image} />
           <Text style={styles.projectTitle}>Stay Fit Project</Text>
           <Text style={styles.projectDesc}>
-            A fitness app designed to help users achieve their health and wellness goals.
+            A fitness app designed to help users achieve their health and wellness goals.This React Native and JavaScript project was probably the most challenging one I've worked on so far.
           </Text>
 
           <View style={styles.buttonContainer}>
