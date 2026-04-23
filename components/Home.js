@@ -24,9 +24,9 @@ const Home = () => {
       >
         <View style={styles.overlay}>
 
-          <Text style={styles.title}>Welcome</Text>
-          <Text style={styles.subtitle}>Taylor Burdgess</Text>
-          <Text style={styles.subtitle}>Designer</Text>
+          <Text style={styles.title}>Welcome!!!</Text>
+          <Text style={styles.subtitle}>I’m Taylor Burdgess</Text>
+          <Text style={styles.subtitle}>A designer passionate about creating clean, thoughtful, and user-friendly designs.</Text>
 
         </View>
       </ImageBackground>
